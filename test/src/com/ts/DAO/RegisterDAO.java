@@ -21,7 +21,7 @@ public class RegisterDAO extends HttpServlet {
 		String name = user.getName();
 		String email = user.getEmail();
 		String password = user.getPassword();
-		int phoneno = user.getPhoneno();
+		String phoneno = user.getPhoneno();
 		Connection connection = null;
 		Statement statement = null;
 		ResultSet resultSet = null;
@@ -34,7 +34,7 @@ public class RegisterDAO extends HttpServlet {
 			ps.setString(1, user.getName());
 			ps.setString(2, user.getEmail());
 			ps.setString(3, user.getPassword());
-			ps.setInt(4, user.getPhoneno());
+			ps.setString(4, user.getPhoneno());
 			ps.executeUpdate();
 			return true;
 		} catch (Exception e) {

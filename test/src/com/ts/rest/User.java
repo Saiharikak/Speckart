@@ -8,7 +8,7 @@ public class User {
 private String name;
 private String email;
 private String password;
-private int phoneno;
+private String phoneno;
 private int uid;
 public String getName() {
 	return name;
@@ -28,10 +28,10 @@ public String getPassword() {
 public void setPassword(String password) {
 	this.password = password;
 }
-public int getPhoneno() {
+public String getPhoneno() {
 	return phoneno;
 }
-public void setPhoneno(int phoneno) {
+public void setPhoneno(String phoneno) {
 	this.phoneno = phoneno;
 }
 public int getUid() {
@@ -40,7 +40,7 @@ public int getUid() {
 public void setUid(int uid) {
 	this.uid = uid;
 }
-public User(String name, String email, String password, int phoneno, int uid) {
+public User(String name, String email, String password, String phoneno, int uid) {
 	super();
 	this.name = name;
 	this.email = email;

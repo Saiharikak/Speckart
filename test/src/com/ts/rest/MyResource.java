@@ -2,6 +2,7 @@
 package com.ts.rest;
 
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,6 +19,7 @@ import javax.ws.rs.core.Request;
 import javax.ws.rs.core.UriInfo;
 
 import com.ts.DAO.LoginDAO;
+import com.ts.DAO.ProductDAO;
 import com.ts.DAO.RegisterDAO;
 
 /** Example resource class hosted at the URI path "/myresource"
@@ -82,4 +84,18 @@ public class MyResource {
        public String validate(User user) {
     	return RegisterDAO.validate(user);
     }
+	@GET
+	@Path("/sunglassdetails")
+	@Produces(MediaType.APPLICATION_JSON)
+	public List<Product> getData2() throws ClassNotFoundException, SQLException {
+		System.out.println("hi in dao");
+		ProductDAO products_dao = new ProductDAO();
+		List<Product> list2 = new ArrayList<Product>();
+		list2 = products_dao.getAllProducts();
+		System.out.println(list2);
+		return list2;
+		
+	}
+
+
 }

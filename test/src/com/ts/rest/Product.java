@@ -8,16 +8,17 @@ public class Product {
 	private int pid;
 	private String pname;
 	private String brand;
-	private int quantity;
+	
 	private double price;
+	private String pimage;
 
-	public Product(int pid, String pname, String brand, int quantity, double price) {
+	public Product(int pid, String pname, String brand,double price,String pimage) {
 		super();
 		this.pid = pid;
 		this.pname = pname;
 		this.brand = brand;
-		this.quantity = quantity;
 		this.price = price;
+		this.pimage = pimage;
 	}
 
 	public Product() {
@@ -49,13 +50,7 @@ public class Product {
 		this.brand = brand;
 	}
 
-	public int getQuantity() {
-		return quantity;
-	}
-
-	public void setQuantity(int quantity) {
-		this.quantity = quantity;
-	}
+	
 
 	public double getPrice() {
 		return price;
@@ -64,5 +59,21 @@ public class Product {
 	public void setPrice(double price) {
 		this.price = price;
 	}
+
+	public String getPimage() {
+		return pimage;
+	}
+
+	public void setPimage(String pimage) {
+		this.pimage = pimage;
+	}
+
+	@Override
+	public String toString() {
+		return "Product [pid=" + pid + ", pname=" + pname + ", brand=" + brand + ", price=" + price + ", pimage="
+				+ pimage + "]";
+	}
+
+	
 
 }
