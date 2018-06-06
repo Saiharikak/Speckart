@@ -19,7 +19,7 @@
        <li class="active"><a routerLink = '/men'>Men</a></li>
         <li ><a routerLink = '/women'>Women</a></li>
         <li ><a routerLink = '/kids'>Kids</a></li>
-        <li ><a routerLink = '/cart'>Cart</a></li>
+        <!--  <li ><a routerLink = '/cart'>Cart</a></li>-->
       </ul><br>
 <div class="container">    
   <div class="row">
@@ -27,8 +27,8 @@
       <div class="panel panel-primary">
         <div class="panel-heading">RAY BAN</div>
         <div class="panel-body"><img src="assets/w1.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">plastic frame price $15.99                   
-        <button class="btn btn-primary pull-right" type="submit">Add to cart</button>
+        <div class="panel-footer">plastic frame price ₹1567                   
+        <button (click) = "addtocart($event)"class="btn btn-primary pull-right" type="submit">Add to cart</button>
          </div>
       </div>
     </div>
@@ -36,8 +36,8 @@
       <div class="panel panel-primary">
         <div class="panel-heading" style = "color : white">JHON JACOBS</div>
         <div class="panel-body"><img src="assets/w2.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">stainless steel $20.00 
-        <button class="btn btn-primary pull-right" type="submit">Add to cart</button>
+        <div class="panel-footer">stainless steel ₹2000
+        <button (click) = "addtocart($event)"class="btn btn-primary pull-right" type="submit">Add to cart</button>
         </div>
       </div>
     </div> 
@@ -45,8 +45,8 @@
       <div class="panel panel-primary">
         <div class="panel-heading">OAKLEY</div>
         <div class="panel-body"><img src="assets/w3.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">titanium $12.45
-        <button class="btn btn-primary pull-right" type="submit">Add to cart</button>
+        <div class="panel-footer">titanium ₹1245
+        <button (click) = "addtocart($event)"class="btn btn-primary pull-right" type="submit">Add to cart</button>
         </div>
       </div>
     </div> 
@@ -59,8 +59,8 @@
       <div class="panel panel-primary">
         <div class="panel-heading">KALVIN CLEIN</div>
         <div class="panel-body"><img src="assets/w4.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Stainless $8.99
-        <button class="btn btn-primary pull-right" type="submit">Add to cart</button>
+        <div class="panel-footer">Stainless ₹899
+        <button (click) = "addtocart($event)"class="btn btn-primary pull-right" type="submit">Add to cart</button>
         </div>
       </div>
     </div>
@@ -68,8 +68,8 @@
       <div class="panel panel-primary">
         <div class="panel-heading">VINCENT CHASE</div>
         <div class="panel-body"><img src="assets/w5.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Acetate Frame $16.88
-        <button class="btn btn-primary pull-right" type="submit">Add to cart</button>
+        <div class="panel-footer">Acetate Frame ₹1688
+        <button (click) = "addtocart($event)"class="btn btn-primary pull-right" type="submit">Add to cart</button>
         </div>
       </div>
     </div>
@@ -77,8 +77,8 @@
       <div class="panel panel-primary">
         <div class="panel-heading">POLAROID</div>
         <div class="panel-body"><img src="assets/w6.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Italian Acetate $8.77
-        <button class="btn btn-primary pull-right" type="submit">Add to cart</button>
+        <div class="panel-footer">Italian Acetate ₹877
+        <button (click) = "addtocart($event)"class="btn btn-primary pull-right" type="submit">Add to cart</button>
         </div>
       </div>
     </div>

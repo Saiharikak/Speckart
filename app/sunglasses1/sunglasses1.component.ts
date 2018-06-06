@@ -8,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class Sunglasses1Component implements OnInit {
 
   constructor() { }
-
+  
+   addtocart(event){
+    alert("added to cart")
+  }
   ngOnInit() {
   }
 

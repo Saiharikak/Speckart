@@ -9,6 +9,10 @@ export class EkidsComponent implements OnInit {
 
   constructor() { }
 
+  
+  addtocart(event){
+    alert("added to cart")
+  }
   ngOnInit() {
   }
 

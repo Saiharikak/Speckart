@@ -1,3 +1,58 @@
-<p>
-  smen works!
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+   
+  </style>
+</head>
+<body>
+<div>
+   
+   
+   
+     <ul class="nav">
+       <li class="active"><a routerLink = '/men'>Men</a></li>
+        <li ><a routerLink = '/women'>Women</a></li>
+        <li ><a routerLink = '/kids'>Kids</a></li>
+        <!--  <li ><a routerLink = '/cart'>Cart</a></li>-->
+      </ul><br>
+      
+      <ul *ngFor = "let a of sunglass">
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">{{a.brand}}</div>
+        <div class="panel-body"><img src="assets/{{a.pimage}}" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">₹{{a.price}}   {{a.pname}}			
+ <button (click) = "buynow(a.price)" routerLink = '/men'class="btn btn-primary pull-right" type="submit">Buy Now</button>
+         </div>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">{{a.brand}}</div>
+        <div class="panel-body"><img src="assets/{{a.pimage}}"class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">₹{{a.price}}   {{a.pname}}	
+ <button (click) = "buynow(a.price)" routerLink = '/men'class="btn btn-primary pull-right" type="submit">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    
+   
+  </div>
+</div><br><br>
+</ul>
+</div>
+</body>
+</html>

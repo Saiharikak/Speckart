@@ -28,11 +28,12 @@ import { RwomenComponent } from './rwomen/rwomen.component';
 export const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'men', component: MenComponent},
+   {path: 'smen', component: SmenComponent},
   {path: 'women', component: WomenComponent},
   {path: 'sunglasses1', component: Sunglasses1Component},
   {path: 'registration', component: RegistrationComponent},
   {path: 'login', component: LoginComponent},
-  {path: '', component: LoginComponent},
+  {path: '', component: HomeComponent},
   {path: 'ekids', component: EkidsComponent},
   {path: 'kids', component: KidsComponent},
   {path: 'readingglassesmen', component: RmenComponent},

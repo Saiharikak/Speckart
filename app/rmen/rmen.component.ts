@@ -9,6 +9,10 @@ export class RmenComponent implements OnInit {
 
   constructor() { }
 
+  
+  addtocart(event){
+    alert("added to cart")
+  }
   ngOnInit() {
   }
 

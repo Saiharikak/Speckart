@@ -19,7 +19,7 @@
        <li class="active"><a routerLink = '/men'>Men</a></li>
         <li ><a routerLink = '/women'>Women</a></li>
         <li ><a routerLink = '/kids'>Kids</a></li>
-         <li ><a routerLink = '/cart'>Cart</a></li>
+        <!--  <li ><a routerLink = '/cart'>Cart</a></li>-->
       </ul><br>
 <div class="container">    
   <div class="row">
@@ -27,8 +27,8 @@
       <div class="panel panel-primary">
         <div class="panel-heading">KHAN RETRO</div>
         <div class="panel-body"><img src="assets/ekids1.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">plastic frame price $9.99					
-        <button class="btn btn-primary pull-right" type="submit">Add to cart</button>
+        <div class="panel-footer">plastic frame price ₹1300				
+        <button (click) = "addtocart($event)"class="btn btn-primary pull-right" type="submit">Add to cart</button>
          </div>
       </div>
     </div>
@@ -36,8 +36,8 @@
       <div class="panel panel-primary">
         <div class="panel-heading" style = "color : white">RAYBAN</div>
         <div class="panel-body"><img src="assets/ekids2.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">stainless steel $15.99 
-        <button class="btn btn-primary pull-right" type="submit">Add to cart</button>
+        <div class="panel-footer">stainless steel ₹1500
+        <button (click) = "addtocart($event)"class="btn btn-primary pull-right" type="submit">Add to cart</button>
         </div>
       </div>
     </div> 
@@ -45,8 +45,8 @@
       <div class="panel panel-primary">
         <div class="panel-heading">OAKLEY</div>
         <div class="panel-body"><img src="assets/ekids3.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">titanium $14.95
-        <button class="btn btn-primary pull-right" type="submit">Add to cart</button>
+        <div class="panel-footer">titanium ₹1000
+        <button (click) = "addtocart($event)"class="btn btn-primary pull-right" type="submit">Add to cart</button>
         </div>
       </div>
     </div> 
@@ -59,8 +59,8 @@
       <div class="panel panel-primary">
         <div class="panel-heading">DIFFERENT</div>
         <div class="panel-body"><img src="assets/ekids4.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">
-        <button class="btn btn-primary pull-right" type="submit">Add to cart</button>
+        <div class="panel-footer">Frame ₹900
+        <button (click) = "addtocart($event)"class="btn btn-primary pull-right" type="submit">Add to cart</button>
         </div>
       </div>
     </div>
@@ -68,8 +68,8 @@
       <div class="panel panel-primary">
         <div class="panel-heading">BRANDED</div>
         <div class="panel-body"><img src="assets/ekids5.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Frame $9.99
-        <button class="btn btn-primary pull-right" type="submit">Add to cart</button>
+        <div class="panel-footer">Frame ₹800
+        <button (click) = "addtocart($event)"class="btn btn-primary pull-right" type="submit">Add to cart</button>
         </div>
       </div>
     </div>
@@ -78,7 +78,7 @@
         <div class="panel-heading">OTHER</div>
         <div class="panel-body"><img src="assets/ekids6.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer">Frame $8.77
-        <button class="btn btn-primary pull-right" type="submit">Add to cart</button>
+        <button (click) = "addtocart($event)"class="btn btn-primary pull-right" type="submit">Add to cart</button>
         </div>
       </div>
     </div>
